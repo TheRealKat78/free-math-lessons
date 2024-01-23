@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>MillionUnblocks</title>
+    <link rel="icon" href="./millionunblocks.png" />
+    <meta
+      name="description"
+      content="MillionUnblocks is a proxy you can use to unblock websites or search web with privacy."
+    />
+    <meta name="author" content="Website Unblocker & Proxy" />
+    <meta
+      name="keywords"
+      content="proxy, web proxy, service workers, unblock websites, unblock chromebook, free web proxy, proxy list, proxy sites, unblock chromebook, online proxy, proxy server, proxysite, proxy youtube, bypass securly, bypass, bypass lightspeed filter, chromebooks, unblock youtube, youtube proxy, unblocked youtube, youtube unblocked"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#00a7c8"
+    />
+    <meta name="googlebot" content="index, follow, snippet" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./scripts/bundle.js" defer></script>
+    <script src="./scripts/config.js" defer></script>
+    <script src="./index.js" defer></script>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8804134390307193"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/all.css" />
+  </head>
+
+  <body>
+    <div class="grid"></div>
+    <div class="logo-wrapper">
+      <img class="logo" src="./millionunblocks.png" />
+      <h1>MillionUnblocks</h1>
+    </div>
+
+    <div class="desc">
+      <p>Access unblocked websites or browse the web with privacy</p>
+    </div>
+
+    <form>
+      <input placeholder="Search Google or Enter a URL" />
+      <button type="submit" class="go">Go</button>
+      <div class="loading-wrapper">
+        <div class="loading-circle"></div>
+        Loading...
+      </div>
+    </form>
+
+    <div class="imp-msg">
+      <h1>⬇ Important Messages ⬇</h1>
+      <div class="boxes">
+        <div>
+          <h2>If it says "this site has been suspended by its owner"</h1>
+            <p>There are two sites, millionunblocks.onrender.com and millionunblocks-alt.onrender.com If one site says it has been suspended, use the other one. This is because both sites have a limited amount of resources, and the site is suspended when the resources are used. They will renew at the end of every month though, so at leastone of the websites should be online all the time.</p>
+          </div>
+          <div>
+            <h2>If the site takes a long time to load</h1>
+              <p>If no one's been using the site for 15 minutes, it will automatically go to sleep and the next time someone loads it, it will start back up but will take about 2 minutes to load the site. So if the website is taking a long time to load, it's probably still working, it's just that it's starting back up after it's been inactive for more than 15 minutes. If it still does not load or shows an unexpected screen, contact me.</p>
+            </div>
+      </div>
+    </div>
+
+    <style>
+      :root {
+        --main-color: #00a7c8;
+      }
+
+      .imp-msg {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .imp-msg .boxes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .imp-msg .boxes div {
+        background-color: rgba(0, 0, 0, 0.815);
+        border-radius: 10px;
+        min-width: 25vw;
+        min-height: 20rem;
+        width: min-content;
+        height: min-content;
+        padding: 1.5rem;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        border: 3px solid var(--main-color);
+      }
+
+      .imp-msg h1 {
+        color: red;
+        background-color: rgba(0, 0, 0, 0.603);
+        width: fit-content;
+        padding: 1.5vh;
+        border-radius: 10px;
+      }
+
+      * {
+        color: white;
+      }
+
+      dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.726);
+      }
+
+      dialog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border: 0.5rem solid var(--main-color);
+        height: 45rem;
+        width: 35rem;
+        border-radius: 20px;
+        background-color: rgb(0, 0, 0);
+      }
+
+      dialog p {
+        font-size: large;
+        max-width: 90%;
+        line-height: 1.5;
+      }
+
+      dialog button.closeModal {
+        margin-top: 9rem;
+        height: 4rem;
+        width: 13rem;
+        background-color: var(--main-color);
+        font-size: 35px;
+        border: none;
+        border-radius: 10px 30px;
+        transition: border-radius 0.3s ease;
+      }
+
+      dialog button.closeModal:hover {
+        border-radius: 30px 10px;
+        background-color: #00d5ff;
+        cursor: pointer;
+      }
+
+      dialog.onload i,
+      dialog.important i {
+        font-size: 10rem;
+        transform: translateY(50%);
+        color: var(--main-color);
+        animation: colorchange 5s linear infinite;
+      }
+
+      @keyframes colorchange {
+        0% {
+          color: var(--main-color);
+        }
+
+        25% {
+          color: #bbc800;
+        }
+
+        50% {
+          color: #00c81b;
+        }
+
+        75% {
+          color: #00c88c;
+        }
+
+        100% {
+          color: var(--main-color);
+        }
+      }
+
+      .grid {
+        background: url("grid.svg") repeat;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+
+      body {
+        background: #581512; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #510077,
+          #0e3f77,
+          #007451,
+          #795200,
+          #882b00,
+          #581512,
+          #882b00,
+          #795200,
+          #007451,
+          #0e3f77,
+          #510077
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #510077,
+          #0e3f77,
+          #007451,
+          #795200,
+          #882b00,
+          #581512,
+          #581512,
+          #882b00,
+          #795200,
+          #007451,
+          #0e3f77,
+          #510077
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-size: 500%;
+        animation: rgb 60s linear infinite;
+      }
+
+      .loading-wrapper {
+        display: none;
+      }
+
+      form.loading .loading-wrapper {
+        display: block;
+      }
+
+      form.loading input,
+      form.loading button {
+        display: none;
+      }
+
+      .logo-wrapper .logo {
+        width: 150px;
+        height: 150px;
+      }
+
+      form input {
+        background-color: rgba(0, 0, 0, 0.705);
+        border: 2px solid var(--main-color);
+        transition: 0.2s ease;
+      }
+
+      .logo-wrapper h1 {
+        margin-top: 2.5rem;
+      }
+
+      form input:hover {
+        cursor: text;
+        border: 2px solid #00a7c894;
+        border-radius: 6px;
+      }
+
+      button.go {
+        margin-top: 5px;
+        height: 48px;
+        border: 1px solid var(--main-color);
+        border: none;
+        align-items: center;
+        cursor: pointer;
+        font-size: 2.5vh;
+        margin-left: 1vw;
+        background-color: var(--main-color);
+        color: white;
+        width: 6vh;
+        text-align: center;
+        border-radius: 5px;
+        transition: all 0.2s ease;
+      }
+
+      button.go:hover {
+        opacity: 0.75;
+      }
+
+      .logo-wrapper {
+        margin-top: 5%;
+      }
+
+      form.loading .loading-wrapper {
+        margin-top: 1rem;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form.loading .loading-wrapper .loading-circle {
+        border-top: 0.5rem solid var(--main-color);
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        animation-name: loading;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes loading {
+        0% {
+          transform: rotate(-360deg);
+        }
+      }
+
+      @keyframes rgb {
+        0% {
+          background-position: 0%;
+        }
+
+        100% {
+          background-position: 500%;
+        }
+      }
+    </style>
+  </body>
+</html>
